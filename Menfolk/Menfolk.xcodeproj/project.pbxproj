@@ -39,7 +39,6 @@
 		2B829110200DFC26007B69AB /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B82910F200DFC26007B69AB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B829112200DFD25007B69AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B829111200DFD25007B69AB /* Images.xcassets */; };
 		2B829114200E0AF1007B69AB /* BSVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B829113200E0AF1007B69AB /* BSVideoCell.swift */; };
-		2BC789C220298C730054BF6A /* VideoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC789C120298C730054BF6A /* VideoLayout.swift */; };
 		2BC789C620299F270054BF6A /* GYVideoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC789C520299F270054BF6A /* GYVideoLayout.m */; };
 /* End PBXBuildFile section */
 
@@ -97,10 +96,9 @@
 		2B82910F200DFC26007B69AB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		2B829111200DFD25007B69AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B829113200E0AF1007B69AB /* BSVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSVideoCell.swift; sourceTree = "<group>"; };
-		2BC789C120298C730054BF6A /* VideoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLayout.swift; sourceTree = "<group>"; };
-		2BC789C320299F270054BF6A /* Menfolk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menfolk-Bridging-Header.h"; sourceTree = "<group>"; };
 		2BC789C420299F270054BF6A /* GYVideoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYVideoLayout.h; sourceTree = "<group>"; };
 		2BC789C520299F270054BF6A /* GYVideoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYVideoLayout.m; sourceTree = "<group>"; };
+		2BC789C82029ACA90054BF6A /* Menfolk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Menfolk-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +149,7 @@
 		2B4A35B8200C90BB00118985 /* Menfolk */ = {
 			isa = PBXGroup;
 			children = (
+				2BC789C72029AC6E0054BF6A /* Bridging_Header */,
 				2B4A35B9200C90BB00118985 /* AppDelegate.swift */,
 				2B4A35BB200C90BB00118985 /* ViewController.swift */,
 				2B4A35BD200C90BB00118985 /* Main.storyboard */,
@@ -297,8 +296,6 @@
 				2B48F1A5200CCEB6001E40B0 /* VideoServiceManage.swift */,
 				2BC789C420299F270054BF6A /* GYVideoLayout.h */,
 				2BC789C520299F270054BF6A /* GYVideoLayout.m */,
-				2BC789C120298C730054BF6A /* VideoLayout.swift */,
-				2BC789C320299F270054BF6A /* Menfolk-Bridging-Header.h */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -331,6 +328,14 @@
 				2B4A35EF200CA96C00118985 /* SDWebImage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BC789C72029AC6E0054BF6A /* Bridging_Header */ = {
+			isa = PBXGroup;
+			children = (
+				2BC789C82029ACA90054BF6A /* Menfolk-Bridging-Header.h */,
+			);
+			path = Bridging_Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +438,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B4A35E2200C9F6100118985 /* CommonViewController.swift in Sources */,
-				2BC789C220298C730054BF6A /* VideoLayout.swift in Sources */,
 				2B4A35DA200C92E800118985 /* WriteViewController.swift in Sources */,
 				2B4A35BC200C90BB00118985 /* ViewController.swift in Sources */,
 				2B4A35BA200C90BB00118985 /* AppDelegate.swift in Sources */,
@@ -597,7 +601,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pp.Menfolk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Controller/BestPart/VideoViewController/Service/Menfolk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Menfolk/Bridging_Header/Menfolk-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,7 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pp.Menfolk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Controller/BestPart/VideoViewController/Service/Menfolk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Menfolk/Bridging_Header/Menfolk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
