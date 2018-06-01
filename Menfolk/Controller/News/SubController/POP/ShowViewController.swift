@@ -1,19 +1,21 @@
 //
-//  WriteViewController.swift
+//  ShowViewController.swift
 //  Menfolk
 //
-//  Created by zhugy on 2018/1/15.
+//  Created by zhugy on 2018/2/6.
 //  Copyright © 2018年 zhugy. All rights reserved.
 //
 
 import UIKit
 
-class WriteViewController: UIViewController {
+class ShowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view.
+        
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {

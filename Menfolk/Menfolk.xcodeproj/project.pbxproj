@@ -40,6 +40,9 @@
 		2B829112200DFD25007B69AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B829111200DFD25007B69AB /* Images.xcassets */; };
 		2B829114200E0AF1007B69AB /* BSVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B829113200E0AF1007B69AB /* BSVideoCell.swift */; };
 		2BC789C620299F270054BF6A /* GYVideoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC789C520299F270054BF6A /* GYVideoLayout.m */; };
+		2BC789CC2029D42D0054BF6A /* POPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC789CB2029D42D0054BF6A /* POPViewController.swift */; };
+		2BC789CE2029D4810054BF6A /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC789CD2029D4810054BF6A /* ShowViewController.swift */; };
+		619B23211BD90FA2F6350D71 /* Pods_Menfolk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B161DD8C3BA82FCA6A8C0D3D /* Pods_Menfolk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +102,11 @@
 		2BC789C420299F270054BF6A /* GYVideoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYVideoLayout.h; sourceTree = "<group>"; };
 		2BC789C520299F270054BF6A /* GYVideoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYVideoLayout.m; sourceTree = "<group>"; };
 		2BC789C82029ACA90054BF6A /* Menfolk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Menfolk-Bridging-Header.h"; sourceTree = "<group>"; };
+		2BC789CB2029D42D0054BF6A /* POPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPViewController.swift; sourceTree = "<group>"; };
+		2BC789CD2029D4810054BF6A /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		4DBEDCFD809F3B8474FC9D06 /* Pods-Menfolk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menfolk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Menfolk/Pods-Menfolk.release.xcconfig"; sourceTree = "<group>"; };
+		B161DD8C3BA82FCA6A8C0D3D /* Pods_Menfolk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Menfolk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8D1850E087E8F8E47281679 /* Pods-Menfolk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menfolk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Menfolk/Pods-Menfolk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +121,22 @@
 				2B4A35FA200CA96D00118985 /* Cartography.framework in Frameworks */,
 				2B4A35FB200CA96D00118985 /* Locksmith.framework in Frameworks */,
 				2B4A35FC200CA96D00118985 /* Reachability.framework in Frameworks */,
+				619B23211BD90FA2F6350D71 /* Pods_Menfolk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25B3314CB68C97AF97705C8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8D1850E087E8F8E47281679 /* Pods-Menfolk.debug.xcconfig */,
+				4DBEDCFD809F3B8474FC9D06 /* Pods-Menfolk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2B4A35AD200C90BB00118985 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +153,7 @@
 				2B4A35B8200C90BB00118985 /* Menfolk */,
 				2B4A35B7200C90BB00118985 /* Products */,
 				2B4A35EE200CA96B00118985 /* Frameworks */,
+				25B3314CB68C97AF97705C8B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				2B4A35D7200C92D800118985 /* NewsViewController.swift */,
+				2BC789C92029D3CA0054BF6A /* SubController */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -326,6 +346,7 @@
 				2B4A35F0200CA96C00118985 /* ObjectMapper.framework */,
 				2B4A35F5200CA96D00118985 /* Reachability.framework */,
 				2B4A35EF200CA96C00118985 /* SDWebImage.framework */,
+				B161DD8C3BA82FCA6A8C0D3D /* Pods_Menfolk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,6 +359,23 @@
 			path = Bridging_Header;
 			sourceTree = "<group>";
 		};
+		2BC789C92029D3CA0054BF6A /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				2BC789CA2029D3E00054BF6A /* POP */,
+			);
+			path = SubController;
+			sourceTree = "<group>";
+		};
+		2BC789CA2029D3E00054BF6A /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				2BC789CB2029D42D0054BF6A /* POPViewController.swift */,
+				2BC789CD2029D4810054BF6A /* ShowViewController.swift */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,11 +383,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B4A35C8200C90BB00118985 /* Build configuration list for PBXNativeTarget "Menfolk" */;
 			buildPhases = (
+				E85FE0A1B65F69F6F85F346F /* [CP] Check Pods Manifest.lock */,
 				2B4A35B2200C90BB00118985 /* Sources */,
 				2B4A35B3200C90BB00118985 /* Frameworks */,
 				2B4A35B4200C90BB00118985 /* Resources */,
 				2B4A35ED200CA51F00118985 /* ShellScript */,
 				2B4A360D200CACC000118985 /* CopyFiles */,
+				A9BDEF5FDB75A15E6473514E /* [CP] Embed Pods Frameworks */,
+				E155DCEDB03C0D077BF1A480 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,6 +471,57 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		A9BDEF5FDB75A15E6473514E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Menfolk/Pods-Menfolk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menfolk/Pods-Menfolk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E155DCEDB03C0D077BF1A480 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menfolk/Pods-Menfolk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E85FE0A1B65F69F6F85F346F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Menfolk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -437,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC789CC2029D42D0054BF6A /* POPViewController.swift in Sources */,
 				2B4A35E2200C9F6100118985 /* CommonViewController.swift in Sources */,
 				2B4A35DA200C92E800118985 /* WriteViewController.swift in Sources */,
 				2B4A35BC200C90BB00118985 /* ViewController.swift in Sources */,
@@ -446,6 +539,7 @@
 				2B4A35D4200C922400118985 /* RootViewController.swift in Sources */,
 				2B4A35D8200C92D800118985 /* NewsViewController.swift in Sources */,
 				2B4A35D6200C92CB00118985 /* BestPartViewController.swift in Sources */,
+				2BC789CE2029D4810054BF6A /* ShowViewController.swift in Sources */,
 				2B48F1A6200CCEB6001E40B0 /* VideoServiceManage.swift in Sources */,
 				2B4A35EC200C9FEA00118985 /* VideoViewController.swift in Sources */,
 				2B4A35DC200C92FC00118985 /* CommunityViewController.swift in Sources */,
@@ -586,6 +680,7 @@
 		};
 		2B4A35C9200C90BB00118985 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D1850E087E8F8E47281679 /* Pods-Menfolk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -610,6 +705,7 @@
 		};
 		2B4A35CA200C90BB00118985 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBEDCFD809F3B8474FC9D06 /* Pods-Menfolk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

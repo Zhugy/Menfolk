@@ -66,6 +66,7 @@ class RootViewController: UITabBarController {
             item.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .normal)
             item.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.red], for: .selected)
             controllers[i].tabBarItem = item
+            controllers[i].title = titles[i]
         }
         
         self.viewControllers = controllers
