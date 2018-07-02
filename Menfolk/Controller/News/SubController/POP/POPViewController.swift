@@ -10,9 +10,6 @@ import UIKit
 
 class POPViewController: UIViewController {
 
-    private let pop: UIPopoverPresentationController = {
-        let pop = UIPopoverPresentationController(presentedViewController: <#T##UIViewController#>, presenting: <#T##UIViewController?#>)
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
